@@ -1,0 +1,100 @@
+/* FICHE DE RENSEIGNEMENT */
+
+.nameClass{
+    margin-left: 10%;
+    margin-bottom: -10%;
+}
+
+.surnameClass{
+    margin-left: 43%;
+}
+
+.birthdClass{
+    margin-left: 78%;
+    margin-bottom: -31%;
+    padding-top: 7%;
+    margin-top: -4%;
+}
+
+
+
+.adressClass{
+    margin-left: 80%;
+    margin-top: 8%;
+    margin-bottom: 9%;
+}
+
+.numClass{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.secuClass{
+    margin-top: -6%;
+    margin-left: 43%;
+    margin-bottom: -15%;
+}
+
+.mailClass{
+    margin-left: 36%;
+    margin-top: 2%;
+}
+
+.formRegisterButton{
+    margin-left: 92%;
+    margin-top: -9%;
+}
+
+
+/* Diagnostic login page */
+
+.MuiPaper-root-70{
+    /* title2 */
+    margin-top: -2%;
+}
+
+.multilineClass{
+    margin-left: 46%;
+    margin-bottom: 2px;
+    margin-top: -1%;
+}
+
+.traitementClass{
+    margin-left: 19%;
+    margin-bottom: -2%;
+    margin-top: -9%;
+}
+
+.multi{
+    width: 20;
+}
+
+.formDiagnosticButton{
+    margin-left: 92%;
+    margin-top: -13%;
+}
+
+/* Planner */
+.pickerClass{
+    margin-top: 7%;
+    margin-bottom: -13%;
+}
+
+.finalRedButton{
+    margin-left: 91%;
+    margin-right: -2%;
+    margin-top: -8%;
+}
+
+.finalGreenButton{
+    margin-left: 47%;
+    margin-right: -47%;
+    margin-top: 3%;
+}
+
+#appointementClass{
+    margin-top: -8%;
+    margin-left: 73%;
+}
+
+
