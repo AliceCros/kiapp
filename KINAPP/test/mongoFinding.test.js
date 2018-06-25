@@ -14,12 +14,15 @@ describe('Finding patients', () => {
 
     beforeEach((done) => {
         testPatient = new TestPatient({
+            frontId: TestPatient.length,
             name: 'Layne',
-            firstName: "Arnold",
-            socialSecurityNumber: "134576789013", 
-            address: "18 rue Baron 75017 Paris", 
+            surname: "Arnold",
+            socialSecurityNumber: "134576789013",
+            birthd: "1951-04-12",
+            adress: "18 rue Baron 75017 Paris", 
             phoneNumber: "0754378571", 
-            email: "arnold-layne@post.co.uk"
+            mail: "arnold-layne@post.co.uk",
+            files : []
         });
         
         testPatient.save().then(() => {

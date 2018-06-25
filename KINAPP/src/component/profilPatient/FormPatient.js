@@ -64,7 +64,7 @@ class FormPatient extends React.Component{
                     label="Date de Naissance"
                     value={this.state.birthd}
                     onChange={(oEvt)=> this.setState({birthd: oEvt.target.value})}
-                    type="number"
+                    type="date"
                     InputLabelProps={{
                         shrink: true,
                     }}

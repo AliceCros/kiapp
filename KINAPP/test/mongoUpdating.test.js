@@ -14,12 +14,15 @@ describe('Updating patients', () => {
 
     beforeEach((done) => {
         testPatient = new TestPatient({
+            frontId: TestPatient.length,
             name: 'Layne',
-            firstName: "Arnold",
-            socialSecurityNumber: "134576789013", 
-            address: "18 rue Baron 75017 Paris", 
+            surname: "Arnold",
+            socialSecurityNumber: "134576789013",
+            birthd: "1951-04-12",
+            adress: "18 rue Baron 75017 Paris", 
             phoneNumber: "0754378571", 
-            email: "arnold-layne@post.co.uk"
+            mail: "arnold-layne@post.co.uk",
+            files : []
         });
         
         testPatient.save().then(() => {
@@ -29,9 +32,9 @@ describe('Updating patients', () => {
 
     it('Updates one patient by id in the database', (done) => {
 
-        TestPatient.findByIdAndUpdate({_id: testPatient._id}, {email: 'arnold-layne@strange.hobbie.com'}).then(() => {
+        TestPatient.findByIdAndUpdate({_id: testPatient._id}, {mail: 'arnold-layne@strange.hobbie.com'}).then(() => {
             TestPatient.findById({_id: testPatient._id}).then((result) => {
-                assert(result.email === 'arnold-layne@strange.hobbie.com');
+                assert(result.mail === 'arnold-layne@strange.hobbie.com');
                 done();
             });
         });

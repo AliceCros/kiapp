@@ -8,15 +8,17 @@ describe('Nesting file', () => {
 
         // Delete files objects before each test
         beforeEach((done) => {
-            mongoose.connection.collections.files.drop(() => {
+            mongoose.connection.collections.test_patients.drop(() => {
                 done();
             });
         });
 
         let testPatient = new TestPatient({
+            frontId: TestPatient.length,
             name: 'Layne',
             surname: "Arnold",
-            socialSecurityNumber: "134576789013", 
+            socialSecurityNumber: "134576789013",
+            birthd: "1951-04-12",
             adress: "18 rue Baron 75017 Paris", 
             phoneNumber: "0754378571", 
             mail: "arnold-layne@post.co.uk",
@@ -33,15 +35,17 @@ describe('Nesting file', () => {
     });
 
 
-    it('Adds a book to an author', (done) => {
+    it('Adds a file to a patient', (done) => {
 
         let testPatient = new TestPatient({
+            frontId: TestPatient.length,
             name: 'Layne',
-            firstName: "Arnold",
-            socialSecurityNumber: "134576789013", 
-            address: "18 rue Baron 75017 Paris", 
+            surname: "Arnold",
+            socialSecurityNumber: "134576789013",
+            birthd: "1951-04-12",
+            adress: "18 rue Baron 75017 Paris", 
             phoneNumber: "0754378571", 
-            email: "arnold-layne@post.co.uk",
+            mail: "arnold-layne@post.co.uk",
             files: {pathologie: 'back', observation: 'sciatique'}
         });
             

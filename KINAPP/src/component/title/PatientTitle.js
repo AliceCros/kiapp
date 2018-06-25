@@ -19,7 +19,7 @@ function PatientTitle(props) {
     <div>
       <Paper className={classes.root} elevation={4}>
         <Typography variant="headline" component="h3">
-          Fiche de renseignement patient
+          Fiche de renseignements patient
         </Typography>
       </Paper>
     </div>

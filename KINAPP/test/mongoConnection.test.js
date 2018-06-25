@@ -2,11 +2,13 @@
 const mongoose = require('mongoose');
 
 // ES6 Promises
-mongoose.Promise = global.Promise;
+// mongoose.Promise = global.Promise;
 
 // Connect to the db before tests run
 before((done) => {
 
+    
+    //mongoose.connect('mongodb://mourad:azerty123456@ds161740.mlab.com:61740/kinapp');
     mongoose.connect('mongodb://localhost/kinapp');
     
     mongoose.connection.once('open', () => {

@@ -65,7 +65,7 @@ handleChange = (event, checked) => {
           aria-labelledby="connection-title"
           aria-describedby="alert-dialog-description"
         >
-          <DialogTitle id="connection-title">{"Voulez-vous accéder à votre espace?"}</DialogTitle>
+          <DialogTitle id="connection-title">{"Voulez-vous accéder à votre espace ?"}</DialogTitle>
           <DialogContent>
             <DialogContentText id="connection-description">
               <SignUp _handlePasswordConnexion ={this._handlePasswordConnexion} 
