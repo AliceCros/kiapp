@@ -19,7 +19,7 @@ function DiagnosticTitle(props) {
     <div>
       <Paper className={classes.root} elevation={4}>
         <Typography variant="headline" component="h3">
-          Diagnostique
+          Diagnostic
         </Typography>
       </Paper>
     </div>

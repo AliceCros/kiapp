@@ -8,7 +8,7 @@ describe('Nesting file', () => {
 
         // Delete files objects before each test
         beforeEach((done) => {
-            mongoose.connection.collections.files.drop(() => {
+            mongoose.connection.collections.test_patients.drop(() => {
                 done();
             });
         });
@@ -17,6 +17,7 @@ describe('Nesting file', () => {
             name: 'Layne',
             surname: "Arnold",
             socialSecurityNumber: "134576789013", 
+            birthd: "1951-04-12",
             adress: "18 rue Baron 75017 Paris", 
             phoneNumber: "0754378571", 
             mail: "arnold-layne@post.co.uk",
@@ -37,11 +38,12 @@ describe('Nesting file', () => {
 
         let testPatient = new TestPatient({
             name: 'Layne',
-            firstName: "Arnold",
+            surname: "Arnold",
             socialSecurityNumber: "134576789013", 
-            address: "18 rue Baron 75017 Paris", 
+            birthd: "1951-04-12",
+            adress: "18 rue Baron 75017 Paris", 
             phoneNumber: "0754378571", 
-            email: "arnold-layne@post.co.uk",
+            mail: "arnold-layne@post.co.uk",
             files: {pathologie: 'back', observation: 'sciatique'}
         });
             

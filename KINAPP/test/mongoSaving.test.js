@@ -15,11 +15,12 @@ describe('Saving patients', () => {
 
         let testPatient = new TestPatient({
             name: 'Layne',
-            firstName: "Arnold",
+            surname: "Arnold",
             socialSecurityNumber: "134576789013", 
-            address: "18 rue Baron 75017 Paris", 
+            birthd: "1951-04-12",
+            adress: "18 rue Baron 75017 Paris", 
             phoneNumber: "0754378571", 
-            email: "arnold-layne@post.co.uk"
+            mail: "arnold-layne@post.co.uk"
         });
         
         testPatient.save().then(() => {
