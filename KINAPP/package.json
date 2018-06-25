@@ -1,6 +1,7 @@
 {
   "name": "kinapp",
   "version": "0.1.0",
+  "key": "21:ba:a9:93:4b:f4:5c:ba:f3:92:e1:45:9f:6d:24:ec",
   "private": true,
   "homepage": "http://alicecros.github.io/kiapp",
   "dependencies": {
