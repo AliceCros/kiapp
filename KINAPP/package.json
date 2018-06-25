@@ -23,7 +23,7 @@
   "scripts": {
     "client": "react-scripts start",
     "serve": "nodemon index.js mongod",
-    "build": "roots",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "test-server": "mocha",
     "eject": "react-scripts eject",
